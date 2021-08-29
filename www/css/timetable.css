@@ -1,0 +1,52 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+}
+th, td{
+    border: 3px solid purple;
+    width: 5em;
+}
+.table_add_info{
+    width: 49%;
+    max-height: 19%;
+    overflow: hidden;
+    font-size: 0.1em;
+}
+
+.table_lesson_name{
+    width: 90%;
+    max-height: 80%;
+    text-align: center;
+}
+
+
+.table_gridcontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.unusual_time{
+    color: orange;
+}
+
+#this_week{
+    float: right;
+}
+#week_forward, #week_back{
+    width: 5em;
+    height: 2em;
+    margin-bottom: 0.5em;
+}
+
+body{
+    font-size: 0.8em
+}
+
+.table_add_info_right{
+    text-align: right;
+}
+.button_div > p{
+    display: inline;
+    padding: 1em;
+} 

@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+#content{
+    margin: 1em
+}
+
+nav {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+#nav_placeholder{
+    width: 100%;
+    z-index: 1;
+    height: 5em;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1.5em;
+  border: 0.1em solid #cacaca;
+}
+
+nav a:hover {
+  background: white;
+}
+
+nav a.active {
+  background-color: white;
+  border-top: hidden;
+}

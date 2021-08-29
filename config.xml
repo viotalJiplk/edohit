@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="eu.viotal.edohit" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>edohit</name>
+    <description>
+        An aplication to make Edookits timetable avalible offline and faster.
+    </description>
+    <author email="" href="">
+        
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon density="ldpi" src="www/img/logo-ldpi.png" />
+    <icon density="mdpi" src="www/img/logo-mdpi.png" />
+    <icon density="hdpi" src="www/img/logo-hdpi.png" />
+    <icon density="xhdpi" src="www/img/logo-xhdpi.png" />
+    <icon density="xxhdpi" src="www/img/logo-xxhdpi.png" />
+    <icon density="xxhdpi" src="www/img/logo-xxxhdpi.png" />
+    <platform name="android">
+        <preference name="AndroidBlacklistSecureSocketProtocols" value="SSLv3,TLSv1" />
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>
