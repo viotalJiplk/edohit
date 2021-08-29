@@ -346,7 +346,7 @@ function parse(response){
                                     if(divmoreinfo[j].nodeName == "#text"){
                                         divmoreinfo[j].innerText = divmoreinfo[j].wholeText;
                                     }
-                                    if(/[A-Z][a-z]+\s*(\d\d?).\s*(\d\d?).\d\d?:\d\d\–\d\d?:\d\d/m.test(divmoreinfo[j].innerText)){
+                                    if(/[A-ZÁČĎÉĚÍŇÓŘŠŤUÚŮÝŽ][a-záčďéěíňóřšťuúůýž]+\s*(\d\d?).\s*(\d\d?).\d\d?:\d\d\–\d\d?:\d\d/m.test(divmoreinfo[j].innerText)){
                                         if(children[i].firstElementChild.nodeType = "SPAN"){
                                             if(children[i].firstElementChild.getAttribute("data-day") != undefined){
                                                 let lesson_time = children[i].firstElementChild.getAttribute("data-day").match(/\d+(?=_)/m)[0];
