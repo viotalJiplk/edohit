@@ -1,0 +1,9 @@
+#content div{
+    border: 0.1em solid black;
+    margin: 0.1em;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+p{
+    display: inline;
+}
