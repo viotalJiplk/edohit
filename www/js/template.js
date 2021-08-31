@@ -1,15 +1,4 @@
-let nav_sites = [
-	{
-		"url": "index.html",
-		"text": "home"
-	},
-	{
-		"url": "login.html",
-		"text": "login"
-	}
-];
-
-build_nav(nav_sites);
+build_nav(settings.nav_sites);
 
 function build_nav(sites){
 	let div = document.createElement("div");

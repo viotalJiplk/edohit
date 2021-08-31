@@ -1,9 +1,9 @@
 document.addEventListener("deviceready", ondeviceready, false);
 const parser = new DOMParser();
 let monday = get_first_day_of_week(new Date(Date.now())).toDateString();
-const timetable_now = "https://gym-tisnov.edookit.net/timetable/?do=familyTimetable-resetFilter";
-const timetable_plusweek = "https://gym-tisnov.edookit.net/timetable/?familyTimetable-value=7&do=familyTimetable-changeFilter"; 
-const timetable_minusweek = "https://gym-tisnov.edookit.net/timetable/?familyTimetable-value=-7&do=familyTimetable-changeFilter"; 
+const timetable_now = settings.baseurl + settings.timetable_now;
+const timetable_plusweek = settings.baseurl + settings.timetable_plusweek; 
+const timetable_minusweek = settings.baseurl + settings.timetable_minusweek; 
 
 function ondeviceready() {
     tryrequest(timetable_now);

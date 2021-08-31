@@ -1,13 +1,14 @@
 document.addEventListener("deviceready", onDeviceReady);
 function onDeviceReady() {
     window.change_session = function(){
-        window.cordova.plugins.CookiesPlugin.getCookie("https://gym-tisnov.edookit.net", (cookies) => {
+        window.cordova.plugins.CookiesPlugin.getCookie(settings.baseurl, (cookies) => {
             // log cookies
             cookies = cookies.split("; ");
-            localStorage.setItem("cookies", JSON.stringify(cookies));
-            cookies.forEach(element => {
-                http.setCookie("https://gym-tisnov.edookit.net/", element);     
+            cookies.forEach(element =>{
+                settings.cookies[element.split("=")[0]] = element.split("=")[1];
+                http.setCookie(settings.baseurl, element);
             });
+            save_settings()
         });
         location.href = "index.html";
     }
