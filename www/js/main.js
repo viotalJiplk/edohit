@@ -233,9 +233,13 @@ const settings_preset ={
     }
 }
 
+function reset_settings(){
+    localStorage.setItem("settings" , JSON.stringify(settings_preset));
+}
+
 if(!localStorage.getItem("settings")){
     //no settings defined yet
-    localStorage.setItem("settings" , JSON.stringify(settings_preset));
+    reset_settings();
 }
 
 const settings =  JSON.parse(localStorage.getItem("settings"));
