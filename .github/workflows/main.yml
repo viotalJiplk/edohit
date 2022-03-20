@@ -32,8 +32,9 @@ jobs:
             cordova build --no-telemetry
       - name: Upload release 
         uses: "marvinpinto/action-automatic-releases@latest"
-        with: repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        prerelease: true
-        title: "Development Build"
-        files: | *.apk
+        with: 
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: true
+          title: "Development Build"
+          files: | *.apk
 
