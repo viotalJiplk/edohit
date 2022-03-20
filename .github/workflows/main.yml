@@ -32,4 +32,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Setup Cordova
         uses: oxr463/setup-cordova@0.0.3
+        with:
+          exec: |
+            cordova platform add android && \
+            cordova build --no-telemetry && \
+            cp "$(find . -name '*.apk')" .
 
